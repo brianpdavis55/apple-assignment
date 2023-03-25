@@ -1,0 +1,225 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*            End of CSS Reset            */
+
+/*                 Setup                  */
+
+/*               Borderbox                */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* clearfix */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+/*               End of Setup             */
+/*                  Font                  */
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+}
+header nav li {
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header {
+  background-color: black;
+  padding: 3px 0;
+}
+.hero {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+h1 {
+  font-size: 3em
+}
+#product-name {
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 1.5em;
+}
+#product-text {
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+#product-links {
+  color: blue;
+}
+#product-links li {
+display: inline-block;
+font-size: 20px 
+}
+#product-img {
+  background: url(./images/hero_iphone_13pro.jpg) center no-repeat;
+  height: 600px;
+  margin-top: -200px
+}
+.col-3 {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  height: 200px;
+  margin-top: 15px;
+}
+#watch {
+  background: url(./images/watch_large.jpg) center no-repeat;
+}
+#ipad {
+  background: url(./images/ipad_pro_large.jpg) center no-repeat;
+}
+#accessories {
+  background: url(./images/accessories_large.jpg) center no-repeat;
+}
+#macbook {
+  background: url(./images/macbook_large.jpg) center no-repeat;
+}
+h6 {
+  color: blue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+footer {
+  background: #f2f2f2;
+}
+body {
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.col-2 {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+.col-2 ul > li:first-child {
+font-weight: 700;
+color: #333;
+padding-top: 15px
+}
+
+footer li {
+  line-height: 20px;
+  padding-top: 0;
+  text-align: left;
+  font-size: .7em;
+}
+.footer-help {
+  border-bottom: 1px solid #e3e3e3;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: left;
+  font-size: .7em;
+  font-weight: 400;
+}
+.bottom-links {
+  font-size: .7em;
+  margin-right: 10px;
+  padding-right: 12px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#copyright {
+  font-weight: 300;
+  margin-right: 35px;
+}
+.line {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.flag {
+  text-align: right;
+  margin-right: 75px;
+  margin-top: -25px;
+  font-size: .7em;
+  font-weight: 300;
+}
